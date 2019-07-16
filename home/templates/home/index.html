@@ -1,0 +1,22 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container-fluid ml-auto mr-auto" id="welcome">
+   <legend>Welcome On Board</legend>
+    <div class="ml-auto mr-auto row">
+        <img src="{% static 'images/avatar.png' %}" alt="Avatar" class="avatar col-md-3" width="250" height="250">
+        <h1 class="slogan col-md-6">Never Loose Your Data!!!</h1>
+    </div>
+    <div class="row ml-auto mr-auto">
+        <div class="col-md-6 row">
+            <h4 class="col-md-5">SignUp Now!</h4>
+            <a class="col btn btn-danger" href="/signup/">SignUp</a>
+        </div>
+        <div class="col-md-6 row">
+            <h4 class="col-md-5">SignIn Now!</h4>
+            <a class="col btn btn-primary" href="/signin/">SignIn</a>
+        </div>
+    </div> 
+</div>
+{% endblock %}

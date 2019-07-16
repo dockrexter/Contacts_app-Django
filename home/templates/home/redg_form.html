@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="welcome">
+    <legend>SignUp!!</legend>
+    <hr>
+    <form method="POST">{%csrf_token%}
+        {{form.as_p}}
+        <button id="btns" class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>
+{% endblock %}
